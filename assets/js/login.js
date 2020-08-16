@@ -1,4 +1,7 @@
 $(function () {
+    if (localStorage.getItem('username')) {
+        $('#form_login [name=username]').val(localStorage.getItem('username'));
+    }
     // 登录 注册页面切换
     $('#link_reg').on('click', function () {
         $('.reg-box').show();
