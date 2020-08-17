@@ -4,7 +4,7 @@ $(function () {
     $('#logout').on('click', function () {
         layer.confirm('是否确定退出？', { icon: 3, title: '提示' }, function (index) {
             sessionStorage.removeItem('token');
-            location.href = '/login.html'
+            location.href = '/login.html';
             layer.close(index);
         })
     })
